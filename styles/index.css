@@ -1,0 +1,138 @@
+body{
+    margin: 0 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    height: 17vw;
+    padding: 0 20px 0 0px;
+    background-color: rgb(238, 100, 65);
+    color: #fff;
+    box-shadow: 9px 2px 9px rgb(117, 115, 115) 
+}
+
+#tabs{
+    margin-left: -35px;
+}
+
+ul li{
+    display: inline;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    font-size: 0.9rem;
+}
+
+.menu-link{
+    text-decoration: none;
+    color: #fff;
+    padding: 15px 5px;    
+}
+
+.menu-link:hover{
+    background-color: rgb(177, 71, 45);
+}
+
+#timer{
+    display: flex;
+    justify-content: center;
+    font-family: Verdana, 'Geneva', Tahoma, sans-serif;
+    font-size: 1.2rem;
+}
+
+#currentTask{
+    display: flex;
+    justify-content: center;
+    font-family: Verdana, 'Geneva', Tahoma, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+#secondPartHome{
+    margin-top: 3vh; 
+}
+
+#buttonClose{
+    display: flex;
+    justify-content: center;
+    margin-top: 1vh;
+}
+
+#button1{
+   width: 90%; 
+   height: 12vw;
+   border: 0px;
+   color: #fff;
+    background-color: #ff0000;
+    border-radius: 5px;
+}
+
+
+#buttonDeactivate{
+    display: flex;
+    justify-content: center;
+    margin-top: 15vh;
+}
+
+
+#button2{
+    width: 90%; 
+    height: 12vw;
+    border: 0px;
+    color: #fff;
+     background-color: #00ccff;
+    border-radius: 5px;
+ }
+ 
+ .volumeIcon{
+     margin-left: 2vw;
+ }
+
+
+.all-task{
+    display: none;
+}
+
+.allTaskActive{
+    display: block;
+    width: 80%;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    margin-top: 18vh; 
+}
+
+#inputArea{
+    margin-left: 5vw;
+}
+
+input{
+    width: 110%;
+    height: 7vh;
+    border: 0px;
+    border-bottom: 1px solid rgb(168, 138, 138)
+}
+
+#card{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15px;
+    margin-left: 15px;
+    /* border: 1px solid #EEE; */
+    padding: 15px 5px; 
+    width: 100%;
+    transition: 0.25s 0.2s linear;
+}
+
+#card:hover{
+    transition: 0.25s 0.2s linear;
+    box-shadow: 2px 2px 5px rgb(117, 115, 115);
+}
+
+#courseName{
+    width: 10pvw;
+    /* border: 1px solid; */
+}

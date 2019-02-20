@@ -1,0 +1,15 @@
+{
+  "name": "Timetable",
+  "version": "1.0.0",
+  "description": "Personal Timetable",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Domey Benjamin",
+  "license": "ISC",
+  "dependencies": {
+    "electromon": "^1.0.10",
+    "electron": "^2.0.8"
+  }
+}
