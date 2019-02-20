@@ -1,6 +1,5 @@
-const { app, BrowserWindow, ipcMain } = require('electron');
+const { app, BrowserWindow, ipcMain,Tray } = require('electron');
 const path = require('path');
-
 let window;
 let tray;
 
@@ -15,7 +14,7 @@ app.on('ready', () => {
     window.loadURL(`file://${path.join(__dirname, 'index.html')}`);
 
     // adding the system tray here
-    const iconName = '';//the image name in the string
+    const iconName = 'icon.png';//the image name in the string
     const iconPath = path.join(__dirname, `./images/${iconName}`)
     tray = new Tray(iconPath);
     // on click on the tray toggle the tab
