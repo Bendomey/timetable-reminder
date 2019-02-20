@@ -2,15 +2,30 @@ const { app, BrowserWindow, ipcMain } = require('electron');
 const path = require('path');
 
 let window;
+let tray;
 
 app.on('ready', () => {
     window = new BrowserWindow({
         height: 400,
         width: 300,
         frame: false,
-        resizable: false
+        resizable: false,
+        show: false
     });
     window.loadURL(`file://${path.join(__dirname, 'index.html')}`);
+
+    // adding the system tray here
+    const iconName = '';//the image name in the string
+    const iconPath = path.join(__dirname, `./images/${iconName}`)
+    tray = new Tray(iconPath);
+    // on click on the tray toggle the tab
+    tray.on('click', () => {
+        if(window.isVisible()){
+            window.hide();
+        }else{
+            window.show();
+        }
+    });
 
     window.on('close', () => {
         window = null;
