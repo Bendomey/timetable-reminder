@@ -57,6 +57,7 @@ ul li{
     display: flex;
     justify-content: center;
     margin-top: 1vh;
+    outline: none !important;
 }
 
 #button1{
@@ -66,6 +67,7 @@ ul li{
    color: #fff;
     background-color: #ff0000;
     border-radius: 5px;
+    outline: none !important;
 }
 
 
@@ -73,6 +75,7 @@ ul li{
     display: flex;
     justify-content: center;
     margin-top: 15vh;
+    outline: none !important;
 }
 
 
@@ -83,6 +86,7 @@ ul li{
     color: #fff;
      background-color: #00ccff;
     border-radius: 5px;
+    outline: none !important;
  }
  
  .volumeIcon{
@@ -107,11 +111,22 @@ ul li{
     margin-left: 5vw;
 }
 
-input{
+.input{
     width: 110%;
     height: 7vh;
     border: 0px;
-    border-bottom: 1px solid rgb(168, 138, 138)
+    border-bottom: 1px solid rgb(168, 138, 138);
+    outline: none !important;
+}
+
+#inputBtn{
+    width: 110%;
+    height: 40px;
+    margin-top: 10px;
+    border: 0;
+    background-color: aqua;
+    outline: none !important;
+    box-shadow: 2px 2px 5px rgb(117, 115, 115);
 }
 
 #card{
@@ -120,9 +135,8 @@ input{
     align-items: center;
     justify-content: space-between;
     margin-top: 15px;
-    margin-left: 15px;
     /* border: 1px solid #EEE; */
-    padding: 15px 5px; 
+    padding: 20px; 
     width: 100%;
     transition: 0.25s 0.2s linear;
 }
@@ -133,6 +147,20 @@ input{
 }
 
 #courseName{
-    width: 10pvw;
+    width: 10vw;
     /* border: 1px solid; */
+}
+
+
+.fa-trash{
+    cursor: pointer;
+    padding: 15px;
+    transition: 0.7s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.fa-trash:hover{
+    background-color: dimgrey;
+    border-radius: 50%;
+    color:white;
+    z-index: 4;
 }
