@@ -1,73 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Timetable</title>
-    <link rel="stylesheet" href="./styles/all.min.css">
-    <link rel="stylesheet" href="./styles/index.css">
-</head>
-<body>
-    <header>
-        <div id="tabs">
-            <ul>
-                <li><a href="#" class="menu-link active">Active Task</a></li>
-                <li><a href="#" class="menu-link all">All Tasks</a></li>
-            </ul>
-        </div>
-        <div id="settings"><i class="fa fa-cog "></i> </div>
-    </header>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Timetable</title>
+        <link rel="stylesheet" href="./styles/all.min.css">
+        <link rel="stylesheet" href="./styles/index.css">
+    </head>
+    <body>
+        <header>
+            <div id="tabs">
+                <ul>
+                    <li><a href="#" class="menu-link active">Active Task</a></li>
+                    <li><a href="#" class="menu-link all">All Tasks</a></li>
+                </ul>
+            </div>
+            <div id="settings"><i class="fa fa-cog "></i> </div>
+        </header>
 
-    <div id="home">
-        <div id="timer">
-            <h1>Time Left <br>&nbsp; 00:00:07</h1>
+        <div id="home">
+            <div id="timer">
+                <h1>Time Left <br>&nbsp; 00:00:07</h1>
+            </div>
+            <div id="secondPartHome">
+                <span id="currentTask">Current Task:</span>
+                <span id="currentTask">Computational Maths</span>
+            </div>
+            <div id="buttonDeactivate">
+                <button id="button2">DEACTIVATE TASK <i class="fa fa-volume-mute volumeIcon"></i> </button>
+                <!-- <button>DEACTIVATE TASK <i class="fa fa-volume-off"></i> </button> -->
+            </div>
+            <div id="buttonClose">
+                <button id="button1">CLOSE</button>
+            </div>
         </div>
-        <div id="secondPartHome">
-            <span id="currentTask">Current Task:</span>
-            <span id="currentTask">Computational Maths</span>
-        </div>
-        <div id="buttonDeactivate">
-            <button id="button2">DEACTIVATE TASK <i class="fa fa-volume-mute volumeIcon"></i> </button>
-            <!-- <button>DEACTIVATE TASK <i class="fa fa-volume-off"></i> </button> -->
-        </div>
-        <div id="buttonClose">
-            <button id="button1">CLOSE</button>
-        </div>
-    </div>
-    <div class="all-task" >
-        <div id="inputArea">
-            <input type="text" class="input" id="addInput" placeholder="Add Task">
-            <input type="time" class="input" id="startInput" placeholder="Add Task">
-            <input type="time" class="input" id="endInput" placeholder="Add Task">
-            <input type="submit" value="Add" id="inputBtn">
-        </div> 
-        <div class="cards">
-            <div id="card">
-                <div id="courseName">
-                    Java Programming... <br>
-                    <span class="showTime">Time: 2:00 PM</span>
+        <div class="all-task" >
+            <div id="inputArea">
+                <input type="text" class="input" id="addInput" placeholder="Add Task">
+                <input type="time"  class="input" id="startInput" placeholder="Add Task">
+                <input type="time" class="input" id="endInput" placeholder="Add Task">
+                <input type="submit" value="Add" id="inputBtn">
+            </div> 
+            <div class="cards">
+                <div id="card">
+                    <div id="courseName">
+                        Java Programming... <br>
+                        <span class="showTime">Time: 2:00 PM</span>
+                    </div>
+                    <div><i class="iconclick fa fa-trash" style="color: rgb(0, 128, 75)"></i></div>
                 </div>
-                <div><i class="iconclick fa fa-trash" style="color: rgb(0, 128, 75)"></i></div>
-            </div>
-        </div>       
-        <!-- <div id="card">
-            <div id="courseName">Java Programming...</div>
-            <div><i class="fa fa-trash" style="color: rgb(0, 128, 75)"></i></div>
+            </div>       
+            
         </div>
-        <div id="card">
-                <div id="courseName">Java Programming...</div>
-                <div><i class="fa fa-trash" style="color: rgb(0, 128, 75)"></i></div>
-            </div>
-            <div id="card">
-                    <div id="courseName">Java Programming...</div>
-                    <div><i class="fa fa-trash" style="color: rgb(0, 128, 75)"></i></div>
-                </div> -->
-        
-    </div>
-    <script src="./scripts/jquery-3.3.1.min.js"></script>
-    <script src="./scripts/all.min.js"></script>
-    <script src="./scripts/fn.js"></script>
-    <script src="./scripts/index.js"></script>
-</body>
+        <script src="./scripts/jquery-3.3.1.min.js"></script>
+        <script src="./scripts/all.min.js"></script>
+        <script src="./scripts/fn.js"></script>
+        <script src="./scripts/index.js"></script>
+    </body>
 </html>

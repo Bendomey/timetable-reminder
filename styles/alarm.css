@@ -1,0 +1,77 @@
+body{
+    background-color: #424647;
+    margin-top: 7vh; 
+    color: #fff;
+    user-select: none;
+}
+
+h1{
+    text-align: center;
+    font-family: 'Cambria', 'Cochin', Georgia, Times, 'Times New Roman', serif;
+}
+
+.alert{
+    display: flex;
+    justify-content: space-around;
+    align-items: center
+}
+
+.icon{
+    color: red;
+    padding: 10px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    transition: 0.7s 0.25s ease-in-out;
+    /* background: #000  */
+}
+
+.icon:hover{
+    background: #fff;
+    transition: 0.7s 0.25s ease-in-out;
+}
+
+@keyframes example {
+    from {margin-right: 10px}
+    to {margin-left: 10px;}
+}
+
+@keyframes example1 {
+    from {margin-left: 10px}
+    to {margin-right: 10px;}
+}
+
+.leftIcon{
+    animation-name: example;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+.rightIcon{
+    animation-name: example1;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+.btnWrapper{
+    margin-top: 5vh; 
+    display: flex;
+    justify-content: center;
+}
+
+.btn-snooze{
+    border-radius: 5px;
+    border: 1px solid #fff;
+    background: transparent;
+    color: #fff;
+    padding: 5px 10px;
+    outline: none !important;
+    transition: 0.5s 0.25s ease-out;
+}
+
+.btn-snooze:hover{
+    background: #fff;
+    color: #424647;
+    font-weight: bold;
+    transition: 0.5s 0.25s ease-in;
+}
+  

@@ -8,6 +8,7 @@ const path = require('path');
 
 
 let window;
+let alert;
 let tray;
 
 app.on('ready', () => {
@@ -18,13 +19,30 @@ app.on('ready', () => {
         resizable: false,
         show: false
     });
+    alert = new BrowserWindow({
+        height: 190,
+        width: 400,
+        frame: false,
+        show: true,
+        modal: true,
+        movable: true
+    });
     window.loadURL(`file://${path.join(__dirname, 'index.html')}`);
+    alert.loadURL(`file://${path.join(__dirname, 'alarm.html')}`);
     // adding the system tray here
     const iconName = 'icon.png';//the image name in the string
     const iconPath = path.join(__dirname, `./images/${iconName}`)
     tray = new Tray(iconPath);
     // on click on the tray toggle the tab
     tray.on('click', () => {
+
+        if(alert.isVisible()){
+            alert.hide();
+        }else{
+            alert.show();
+        }
+        
+
         if(window.isVisible()){
             window.hide();
         }else{
